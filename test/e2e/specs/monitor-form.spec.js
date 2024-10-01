@@ -78,7 +78,7 @@ test.describe("Monitor Form", () => {
 
         // Verify initial condition
         await monitorForm.verifyConditionCount(1); // 1 added by default
-        await monitorForm.setConditionValues(["definitely-not.net"]);
+        await monitorForm.setConditionValues([ "definitely-not.net" ]);
 
         await screenshot(testInfo, page);
         await monitorForm.saveMonitor();
